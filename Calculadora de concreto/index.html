@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Concreto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="corpo">
+    <div class="container">
+        <h1>APP CONCRETO</h1>
+        <form>
+            <div class="form-group">
+                <label for="fck">FCK desejado</label>
+                <select name="fck" id="fck">
+                    <option value="15">15 MPA</option>
+                    <option value="20">20 MPA</option>
+                    <option value="25" selected>25 MPA</option>
+                    <option value="30">30 MPA</option>
+                    <option value="35">35 MPA</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="cimento">Tipo de Cimento</label>
+                <select name="cimento" id="cimento">
+                    <option value="CP II" selected>CP II</option>
+                    <option value="CP III">CP III</option>
+                    <option value="CP IV">CP IV</option>
+                    <option value="CP V">CP V</option>
+                </select>
+            </div>
+            <button type="button" id="calcular"  >Calcular</button>
+        </form>
+        <div id="resultado"></div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
