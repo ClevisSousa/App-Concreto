@@ -3,7 +3,7 @@ document.getElementById("calcular").addEventListener("click", function() {
   const cimento = document.getElementById("cimento").value;
 
   const receitas = {
-    // aqui fica a lista de receitas que já foi definida anteriormente
+    // Aqui fica a lista de receitas já definidas 
 
       "15_MPA_CP_II": ["5 latas de brita", "5 latas de areia", "1 saco de cimento", "1 lata de água"],
       "20_MPA_CP_II": ["4,5 latas de brita", "4,5 latas de areia", "1 saco de cimento", "1 lata de água"],
@@ -25,19 +25,15 @@ document.getElementById("calcular").addEventListener("click", function() {
       "25_MPA_CP_V": ["4,5 latas de brita", "5 latas de areia", "1 saco de cimento", "0,5 lata de água"],
       "30_MPA_CP_V": ["4 latas de brita", "4,5 latas de areia", "1 saco de cimento", "0,5 lata de água"],       
       };
-
-  //defininindo a quantidade de cimento
-
-  
   
 
-  // obter a opção selecionada pelo usuário
+  //Obter a opção selecionada pelo usuário
   const opcao = document.querySelector('input[name="tipo-concreto"]:checked').value + "_MPA_CP_" ;
 
-  // obter a proporção de materiais da opção selecionada
+  //Obter a proporção de materiais da opção selecionada
   const [brita, areia, agua] = receitas[opcao];
 
-  // exibir o resultado na página
+  //Exibir o resultado na página
   const resultado = `Para um saco de cimento de ${cimento} kg, a proporção é ${brita} latas de brita, ${areia} latas de areia e ${agua} litros de água.`;
   document.getElementById("resultado").innerHTML = resultado;
     }
